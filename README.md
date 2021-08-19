@@ -2,3 +2,4 @@
 Recoded my learning about algorithm.
 - hash map
 - set union
+- binary heap
