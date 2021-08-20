@@ -25,3 +25,15 @@ void down(int x) {
         x = t;
     }
 }
+
+void buildHeapUp() {
+    for (int i = 0; i < n; ++i) {
+        up(i);
+    }
+}
+
+void buildHeapDown() {
+    for (int i = n - 1; i >= 0; --i) {
+        down(i);
+    }
+}

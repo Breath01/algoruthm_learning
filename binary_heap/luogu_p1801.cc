@@ -1,26 +1,20 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int a[200005];
-
-int m, n;
-
-
 int main () {
     ios::sync_with_stdio(false);
     cin.tie(0);
-    cin >> m >> n;
-    for (int i = 1; i <= m; ++i) {
-        cin >> a[i];
-    }
-    priority_queue<int, vector<int>, less<int>> pq;
+    int n, m;
+    cin >> n >> m;
+    priority_queue<int, vector<int>, greater<int>> raw;
+    priority_queue<int, vector<int>, less<int>> res;
+    vector<int> temp(n);
     for (int i = 0; i < n; ++i) {
-        int q;
-        cin >> q;
-        for (int i = 1; i <= q; ++i) {
-            pq.push(a[i]);
-        }
-        cout << pq[i + 1] << endl;
+        cin >> temp[i];
     }
-    return 0;
+    for (int i = 0; i < m; ++i) {
+        int  q;
+        cin >> q;
+        
+    }
 }
